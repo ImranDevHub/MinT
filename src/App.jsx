@@ -1,4 +1,4 @@
-const data = ['Ahmed', 'Isa', 'Imran', 'Amir'];
+const data = ['Ahmed', 'Isa', 'Imran', 'Amir', 'Ismael'];
 
 function App() {
   const time = new Date().toLocaleTimeString();
