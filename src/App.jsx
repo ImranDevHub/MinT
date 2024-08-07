@@ -7,6 +7,7 @@ function App() {
     <>
       <h1>Hello React With vite.{time}</h1>
       <List />
+      <Avater />
     </>
   );
 }
@@ -19,6 +20,10 @@ function List() {
       ))}
     </ul>
   );
+}
+
+function Avater() {
+  return <img src="./src/assets/images/LinkedIn_Learning.jpg" alt="Img" />;
 }
 
 export default App;
