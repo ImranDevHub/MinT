@@ -1,0 +1,64 @@
+@import './variable';
+@import './reset';
+
+.collapsible {
+  &__content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+
+  &__btn {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    @include responsive-version(767) {
+      display: none;
+    }
+  }
+
+  &__expanded {
+    .collapsible__content {
+      max-height: 100vh;
+      opacity: 1;
+    }
+    //  .nav__items{
+    //    width: ;
+    //  }
+    .nav__item:hover a {
+      color: $color-primary-darker;
+    }
+  }
+}
+
+.btn {
+  border: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  &__items {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    @include responsive-version(767) {
+      display: flex;
+      align-items: center;
+      width: auto;
+      margin: 0;
+      max-height: 100vh;
+      opacity: 1;
+    }
+  }
+  &__item {
+    margin: 1rem 0.8rem;
+  }
+  &__logo {
+    height: 7rem;
+  }
+}
