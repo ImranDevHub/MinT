@@ -22,7 +22,7 @@ function Navbar() {
       </ul>
 
       <button className="collapsible__btn btn nav__btn" onClick={handleMenu}>
-        <span className="fa-solid fa-bars"></span>
+        <span className={`fa-solid${isOpen ? ' fa-xmark' : ' fa-bars'}`}></span>
       </button>
     </nav>
   );
